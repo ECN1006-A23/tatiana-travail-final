@@ -4,42 +4,47 @@
     <title>site web tatiana</title>
     <style>
       body {
-         background-color: #c57784;
+        background-image: linear-gradien(to top, #ec7560 20%, #cf3760 100%);
+        color: #37cacf;
+        width: 60%;
+        margin: 60px auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background: linear-gradient(to right, #a059b6, #d4307d);
+
       }
 
       h1 {
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-        color: #60c9d0;
-        font-size: 60px;
         text-align: center;
-        font-weight: 700;
-        font-family: "arial", Times, serif;
-        background-color:wheat
-        text-decoration: underline;
-        margin: 100px;
-        padding: 70px;
+        font-weight:bolder ;
+        border: 1px solid #22c9b2;
+        padding: 50px;
+        border-radius: 50px;
       }
       .paragraphe1 {
+        text-align: justify;
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-        color: rgb(202, 185, 218);
+        color: white;
       }
       .paragraphe2 {
-        color: rgb(217, 198, 235);
+        text-align: justify;
+        color: white;
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       }
       .paragraphe3 {
-        color: rgb(216, 198, 233);
+        text-align: justify;
+        color:white;
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       }
       .paragraphe4 {
-        color: rgb(219, 202, 235);
+        text-align: justify;
+        color: white;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
           sans-serif;
       }
       .paragraphe5 {
-        color: rgb(217, 198, 235);
+        text-align: justify;
+        color: white;
         font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
       }
       img {
@@ -70,7 +75,10 @@
     </style>
   </head>
   <body>
-    <h1>Les dangers de la lecture sur des tablettes vs le livre</h1>
+    <div class="container">
+    <h1><strong><em>les dangers de la lecture sur des tablettes vs le livre</em></strong></h1>
+    </div>
+    <div class="container2"></div>
     <p class="paragraphe1">
       Les technologies de l’information et le numérique ont évolué de manière
       exponentielle durant les 20 dernières années. On constate qu’aujourd’hui
@@ -83,7 +91,9 @@
       vies ? Cette problématique fera l’objet de notre discussion dans les
       prochaines lignes.
     </p>
-
+    </div>
+    <br> 
+    <div class="container3">
     <p class="paragraphe2">
       Nous observons de nos jours de plus en plus le recul du désir de lecture
       chez les jeunes. Mais avec l’avènement des supports numérique un outil
@@ -99,7 +109,8 @@
       qui pourront les poussées à stopper la lecture plus rapidement que prévu,
       contrairement à ceux qui lisent des livres papier.
     </p>
-
+    </div>
+    <br>
     <p class="paragraphe3">
       En outre, les conclusions de recherche de Thierry Baccino chercheur en
       psychologie cognitive à l’université paris 8 sur les impacts de la lecture
@@ -110,7 +121,8 @@
       lecture sur papier ou l’on serait plus concentré et donc lire plus vite et
       plus on est concentré sur ce que l’on lit plus grande est la rétention.
     </p>
-
+    <div class="container4"></div>
+    <br>
     <p class="paragraphe4">
       Au vu de ses arguments, il en ressort deux enjeux dans notre société,
       l’enjeu des technologies sur notre santé et l’enjeu éducationnel.
@@ -122,6 +134,9 @@
       capacités cognitives. Car le cerveau étant habitué au support papier a su
       s’adapter au numérique
     </p>
+    </div>
+    <br>
+    <div class="container5"></div>
     <p class="paragraphe5">
       En somme, la lecture sur des supports numériques n’a pas que des effets
       positifs dans nos vies. Tout comme l’arrivé des autres technologies.
@@ -133,12 +148,16 @@
       question de savoir est ce que la nouvelle génération qui est pratiquement
       obsédé par les écrans seraient -elles réceptives à cette éducation ?
     </p>
+    </div>
     <img
-      src="C:\Users\tatia\Desktop\culture numerique\code\image (2).png"
+      src="https://www.sciencenewsforstudents.org/wp-content/uploads/2021/09/GettyImages-917630568-scaled.jpg"
       alt="illustration du devoir"
       height="500"
     />
-    <button>ACHETTER</button>
+    <br>
+    </br>
+  
+      <button>livrevsTablette</button>
     <hr />
     <ul>
       <li>
@@ -158,14 +177,19 @@
       </li>
     </ul>
     <script>
-      function infoBoutton() {
-        let prenon = prompt("quel est ton nom?");
-        let nom = prompt("quel est ton nom");
-        alert("merci" + prenon + ", nous te constaterons bientot");
+      function livrevstablette() {
+        let name = prompt("quel est ton nom?");
+        let nombreheure = prompt("combien d'heure passe-tu as lire sur une tablette par jour?");
+        if (nombreheure >= 4) { 
+          alert ("name" +" tu lis trop sur tablette tu devrais penser à prendre un livre physique😞");
+        } else {
+          alert ("name" +" bravo ton nombre heure de lecture sur tablette est raisonable😊");
+        }
       }
 
-      let cliqueMoi = document.querySelector("button");
-      cliqueMoi.addEventListener("click", infoBoutton);
+      let cliquebutton = document.querySelector("button");
+      cliquebutton.addEventListener("click", livrevstablette);
     </script>
   </body>
 </html>
+
